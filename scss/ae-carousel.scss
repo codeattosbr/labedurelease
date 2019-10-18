@@ -1,0 +1,74 @@
+// CAROUSEL ACONTECE NA ESCOLA
+
+#tabCarousel{
+    width: 614.74px;
+    height: 344.31px;
+    margin: auto;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    margin-top: 25.75px;
+    margin-right: 71px;
+    position: relative;
+    &>button:nth-child(1){
+        background: url('../img/orange-bg.svg') no-repeat;
+        width: 30px;
+        height: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        background-color: red;
+        border: 0px;
+      }
+  }
+  
+  #itens{
+    // overflow-x: auto;
+    width: 614.74px;
+    height: 344.31px;
+    display: inline-block;
+    
+  }
+  
+  #itens ul{
+      list-style: none;
+      position: relative;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+  }
+
+  .item{
+    height: 344.31px;
+    width: 614px;
+    display: flex;
+    &>img{
+      height: 344.31px;
+    }
+  }
+    
+  #prev{
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #E65A24 0% 0% no-repeat padding-box;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  
+  #next{
+    width: 30px;
+    height: 30px;
+    // margin-top: 54px;
+    margin-bottom: auto;
+    background: #E65A24 0% 0% no-repeat padding-box;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  
+  }
+
+
+  

@@ -1,0 +1,302 @@
+ /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  background: #4C4C4C 0% 0% no-repeat padding-box;
+  margin: 10% auto; /* 10% from the top and centered */
+  width: 1088px;
+  height: 476px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.edit-modal{
+  background: url(../img/edit-icon.svg) no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  border: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+}
+
+.edit-modal-content {
+  display: grid;
+  width: 368px;
+  margin-top: 113.67px;
+  &>div:nth-child(4){
+    display: flex;
+  }
+}
+
+.carousel{
+  width: 615px;
+  height: 344px;
+}
+.image-holder{
+  width: 615px;
+  height: 344px;
+}
+#numbers{
+  margin-top: 36.1px;
+  margin-left: 39.26px;
+  margin-right: 35px;
+}
+#btns{
+  // margin-top: 31.89px;
+  margin-top: 21.89px;
+  &>button:nth-child(n){
+    border: 0;
+  }
+}
+
+/* modal-input */
+.edit-modal-input{
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  text-align: left;
+  opacity: 1;
+  background: #4C4C4C 0% 0% no-repeat padding-box;
+  border: 0px;
+  border-bottom: 2px solid #FFFFFF;
+  height: 42px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: -22px;
+  width: 366px;
+  &.desc{
+    font-size: 30px;
+    margin-top: 0px;
+  }
+}
+/* END modal-input */
+
+/* DELETE-content-modal-upload */
+.delButton {
+  background: url(../img/trash-icon.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  border: 0px;
+  margin-right: -1px;
+}
+.delButton-active{
+  background: url(../img/trash-icon-active.svg) no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  border-right: 2px solid white;
+  border-radius: 0px;
+  border: 0px;
+  margin-right: -1px;
+  
+}
+
+#myButton{
+  display:none;
+  overflow: hidden;
+  :nth-child(1){
+    background-color: white;
+    width: 98px;
+    height: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 4px;
+    color: #E65A24;
+    text-align: right;
+    padding-right: 6px;
+    font-size: 17px;
+    margin-left: -26px;
+    border: 0px;
+    margin-top: 5.7px;
+
+  }
+}
+.validButton {
+  background: #4C4C4C 0% 0% no-repeat padding-box;
+  margin-left: 20px;
+  margin-top: 2.5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #FFFFFF;
+  width: 49px;
+  height: 25px;
+  font-size: 17px;
+}
+.cancButton{
+  background: #4C4C4C 0% 0% no-repeat padding-box;
+  margin-left: 20px;
+  margin-top: 2.5px;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  color: #FFFFFF;
+  width: 49px;
+  height: 25px;
+  font-size: 17px;
+}
+
+/* END DELETE-content-modal-upload */
+
+.saveButton{
+  float: right;
+  background: #E65A24 0% 0% no-repeat padding-box;
+  color: white;
+  border: 0px;
+  width: 119px;
+  height: 45px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* The Close Button */
+.close-modal-tab {
+  color: white;
+  float: right;
+  font-weight: bold;
+  margin-right: 26px;
+  margin-top: 0px;
+  margin-left: -8px;
+  z-index: 1;
+  font-size: 40px;
+  width: 15px;
+  height: 15px;
+}
+
+.close-modal-tab:hover,
+.close-modal-tab:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+img{
+  width: 100%;
+}
+
+div#btns{
+  justify-content: center;
+  display: flex;
+  &>button:nth-child(1):before{
+    content: "<";
+    font-size: 40px;
+    margin-left: -4px;
+  }
+  &>button{
+    width: 32px;
+    height: 32px;
+    background: url('../img/iconeborda.svg') no-repeat;
+    color: white;
+    // font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 11.31px;
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    line-height: 28px;
+
+    &.selButton{
+      &.active{
+        background: url('../img/orange-bg.svg') no-repeat;
+      }
+    }
+  }
+  
+  &>button:nth-last-child(2){
+    margin-left: 31.31px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+  }
+  &>button:nth-last-child(1):before{
+    margin-left: -3px;
+    margin-right: 0px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    content: ">";
+    font-size: 40px;
+  }
+}
+
+
+
+.tab button.active {
+  background-color: #ffae00;
+}
+
+/* CORNERS IMG */
+.image-holder {
+  position: relative;
+}
+.corner-modal {
+  position: relative;
+}
+
+/* corner-img-modal upload */
+.corner {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  border-color: transparent;
+  
+  &.tr{
+    border-width: 0 30px 30px 0;
+    border-right-color: #E65A24;
+    right: 0px;
+    top: 0px;
+  }
+
+  &.tl{
+    top: 0;
+    left:0;
+    border-width: 0 0 30px 30px;
+    border-left-color: #E65A24;
+  }
+
+  &.br{
+    bottom: 0;
+    right:0;
+    border-width: 30px 30px 0px 0px;
+    border-right-color: #E65A24;
+  }
+
+  &.bl{
+    bottom: 0;
+    left:0;
+    border-width: 30px 0px 0px 30px;
+    border-left-color: #E65A24;
+  }
+}
+
+/* modal de upload */
+.corner-modal:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 90px 90px 0;
+  border-color: transparent #E65A24 transparent transparent;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 0;
+}
+
